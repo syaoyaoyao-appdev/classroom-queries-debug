@@ -3,7 +3,7 @@ class CoursesController < ApplicationController
     matching_courses = Course.all
 
     @list_of_courses = matching_courses.order({ :created_at => :desc })
-    render({ :template => "courses/index.html.erb" })
+    render({ :template => "courses/index.html.erb" }) 
   end
 
   def show

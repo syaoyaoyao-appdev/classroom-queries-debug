@@ -2,7 +2,7 @@
   <div class="col-md-12">
     <h1>
       List of all students
-    </h1>
+    </h1> 
   </div>
 </div>
 
@@ -31,7 +31,7 @@
         </th>
       </tr>
 
-      <% list_of_students.each do |student| %>
+      <% @list_of_students.each do |student| %>
       <tr>
         <td>
           <%= student.id %>
@@ -50,7 +50,7 @@
         </td>
 
         <td>
-          <a href="/students/:path_id">
+          <a href="/students/<%= student.id %>">
             Show details
           </a>
         </td>
